@@ -1,0 +1,182 @@
+﻿@model Reingenieria_EMS.Models.Evaluacion
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Evaluacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @  model.Cusin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.convocatoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.convocatoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trabajo1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trabajo1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trabajo2)
+        </dt>
+
+        <dd>
+            @Html.AntiForgeryToken()
+        </dd>
+
+        <dt>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        </dt>
+
+        <dd>
+            @Html.HiddenFor(model => model.Id)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.convocatoria, htmlAttributes: new { @class = "control-label col-md-2" })
+        </dt>
+
+        <dd>
+            @Html.EnumDropDownListFor(model => model.convocatoria, htmlAttributes: new { @class = "form-control" })
+        </dd>
+
+        <dt>
+            @Html.ValidationMessageFor(model => model.convocatoria, "", new { @class = "text-danger" })
+        </dt>
+
+        <dd>
+            @Html.LabelFor(model => model.Trabajo1, htmlAttributes: new { @class = "control-label col-md-2" })
+        </dd>
+
+    </dl>
+
+    @       __o = Html.EditorFor(model => model.Trabajo1, new { htmlAttributes = new { @class = "form-control" } });
+
+
+#line default
+#line hidden
+
+#line 13 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.ValidationMessageFor(model => model.Trabajo1, "", new { @class = "text-danger" });
+
+
+#line default
+#line hidden
+
+#line 14 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.LabelFor(model => model.Trabajo2, htmlAttributes: new { @class = "control-label col-md-2" });
+
+
+#line default
+#line hidden
+
+#line 15 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.EditorFor(model => model.Trabajo2, new { htmlAttributes = new { @class = "form-control" } });
+
+
+#line default
+#line hidden
+
+#line 16 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.ValidationMessageFor(model => model.Trabajo2, "", new { @class = "text-danger" });
+
+
+#line default
+#line hidden
+
+#line 17 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.LabelFor(model => model.Trabajo3, htmlAttributes: new { @class = "control-label col-md-2" });
+
+
+#line default
+#line hidden
+
+#line 18 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.EditorFor(model => model.Trabajo3, new { htmlAttributes = new { @class = "form-control" } });
+
+
+#line default
+#line hidden
+
+#line 19 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.ValidationMessageFor(model => model.Trabajo3, "", new { @class = "text-danger" });
+
+
+#line default
+#line hidden
+
+#line 2    __o @Html.LabelFor(model => model.Examen, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.EditorFor(model => model.Examen, new { htmlAttributes = new { @class = "form-control" } })
+        </div>= Html.LabelFor(model => model.Practica, htmlAttributes: new { @class = "control-label col-md-2" });
+
+
+#line default
+#line hidden
+
+#line 24 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.EditorFor(model => model.Practica, new { htmlAttributes = new { @class = "form-control" } });
+
+
+#line default
+#line hidden
+
+#line 25 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.ValidationMessageFor(model => model.Practica, "", new { @class = "text-danger" });
+
+
+#line default
+#line hidden
+
+#line 26 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.LabelFor(model => model.UserId, "UserId", htmlAttributes: new { @class = "control-label col-md-2" });
+
+
+#line default
+#line hidden
+
+#line 27 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.DropDownList("UserId", null, htmlAttributes: new { @class = "form-control" });
+
+
+#line default
+#line hidden
+
+#line 28 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" });
+
+
+#line default
+#line hidden
+
+#line 29 "C:\Users\bk0072\Downloads\EMS\EMS\Views\MisEvaluaciones\ViewPage1.cshtml"
+    __o = Html.LabelFor(model => model.CursoId, "CursoId", htmlAttributes: new { @class = "control-label col-md-2" }
+</div>

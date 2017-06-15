@@ -1,0 +1,82 @@
+﻿@model Reingenieria_EMS.Models.Evaluacion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Evaluacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.convocatoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.convocatoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trabajo1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trabajo1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trabajo2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trabajo2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trabajo3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trabajo3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Examen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Examen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Practica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Practica)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
